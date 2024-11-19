@@ -1,0 +1,199 @@
+/* Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #6610f2;
+    color: #fff !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Efeito de Fade In para animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #6610f2;
+    border-color: #6610f2;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #520dc2;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    background-color: #4b00b4;
+    transform: translateY(2px);
+}
+
+/* Seção Sobre Nós */
+.about-section {
+    background-color: #e9ecef;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 1.125rem;
+    color: #6c757d;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção de Contato */
+.contact-section {
+    background-color: #343a40;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.contact-section p {
+    font-size: 1.125rem;
+    color: #adb5bd;
+    margin-bottom: 30px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Transições de Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resposividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+}
